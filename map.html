@@ -19,9 +19,8 @@
 <body>
   <div id="interactive-map" class="interactive-map"></div>
 <script>
-  const mapSvgUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070334/Canada_map.svg?1679070334";
-  const mapDataUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070348/minimum_wage.json?1679070348";
-
+const mapSvgUrl = "https://raw.githubusercontent.com/rajean/minwagemap/main/Canada_map.svg";
+const mapDataUrl = "https://raw.githubusercontent.com/rajean/minwagemap/main/minimum_wage.json";
   $(window).on('load', function () {
     $('#interactive-map').load(mapSvgUrl, function () {
       $.getJSON(mapDataUrl, function (data) {
