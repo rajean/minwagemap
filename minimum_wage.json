@@ -1,0 +1,74 @@
+{
+  "jurisdictions": [
+    {
+      "name": "Federal",
+      "minWage": 16.65,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "Alberta",
+      "minWage": 15.00,
+      "effectiveDate": "2019-06-26"
+    },
+    {
+      "name": "British Columbia",
+      "minWage": 15.65,
+      "effectiveDate": "2022-06-01"
+    },
+    {
+      "name": "Manitoba",
+      "minWage": 15.00,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "New Brunswick",
+      "minWage": 14.75,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "Newfoundland and Labrador",
+      "minWage": 14.50,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "Northwest Territories",
+      "minWage": 15.20,
+      "effectiveDate": "2021-09-01"
+    },
+    {
+      "name": "Nova Scotia",
+      "minWage": 14.50,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "Nunavut",
+      "minWage": 16.00,
+      "effectiveDate": "2020-04-01"
+    },
+    {
+      "name": "Ontario",
+      "minWage": 15.65,
+      "effectiveDate": "2023-04-01"
+    },
+    {
+      "name": "Prince Edward Island",
+      "minWage": 14.50,
+      "effectiveDate": "2023-01-01"
+    },
+    {
+      "name": "Québec",
+      "minWage": 14.25,
+      "effectiveDate": "2022-05-01"
+    },
+    {
+      "name": "Saskatchewan",
+      "minWage": 13.00,
+      "effectiveDate": "2022-10-01"
+    },
+    {
+      "name": "Yukon",
+      "minWage": 16.77,
+      "effectiveDate": "2023-04-01"
+    }
+  ]
+}
