@@ -18,28 +18,28 @@
 </head>
 <body>
   <div id="interactive-map" class="interactive-map"></div>
-  <script>
-    const mapSvgUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070334/Canada_map.svg?1679070334";
-    const mapDataUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070348/minimum_wage.json?1679070348";
+<script>
+  const mapSvgUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070334/Canada_map.svg?1679070334";
+  const mapDataUrl = "https://api.allorigins.win/raw?url=https://assets.nationbuilder.com/themes/610e8b624764e81fc0b4c1f7/attachments/original/1679070348/minimum_wage.json?1679070348";
 
-    $(document).ready(function () {
-      $('#interactive-map').load(mapSvgUrl, function () {
-        $.getJSON(mapDataUrl, function (data) {
-          data.provinces.forEach(function (province) {
-            const provinceElement = $(`#${province.code}`);
+  $(window).on('load', function () {
+    $('#interactive-map').load(mapSvgUrl, function () {
+      $.getJSON(mapDataUrl, function (data) {
+        data.provinces.forEach(function (province) {
+          const provinceElement = $(`#${province.code}`);
 
-            provinceElement.tooltipster({
-              content: `<strong>${province.name}</strong><br/>Minimum Wage: $${province.minWage.toFixed(2)}`,
-              theme: 'tooltipster-shadow',
-              animation: 'fade',
-              delay: 200,
-              touchDevices: false,
-              trigger: 'hover',
-            });
+          provinceElement.tooltipster({
+            content: `<strong>${province.name}</strong><br/>Minimum Wage: $${province.minWage.toFixed(2)}`,
+            theme: 'tooltipster-shadow',
+            animation: 'fade',
+            delay: 200,
+            touchDevices: false,
+            trigger: 'hover',
           });
         });
       });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
